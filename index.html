@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+<link rel="stylesheet" href="style.css">
+<link rel = "document" href = "FAQ.html">
+    </head>
+<body>
+<!-- Navigasjonsbar med logo som hyperlenker til Craigslist hjemmeside når den klikkes på. 
+       Lagt til "My account" med et illustrasjons profilbilde og "Post Add" med en knapp i plussikon. 
+  -->
+<div class="container">
+  <div class="logo">
+  <a href="https://newyork.craigslist.org/"><img src="Downloads/craigslist-logo.png" alt="" width="102" ></a>
+    <nav>
+      <ul>
+        <img src="Downloads/blank-profile-picture.png" alt="" width="40">
+      <li> My account </li>
+      <li> Post Add </li>
+      <button type="button"> + </button>
+      </ul>
+      </nav>
+    </div>
+    <!-- Navigasjonsbar med brukerens lokalisasjon (New York). Lagt til hoover-effekt i gul når musen kjører over der.
+      Lagt til en dropdown meny, slik at brukeren får innsikt tilgjengelige "boroughs" (bydeler) gjeldende for nettsiden. -->
+    <div class="container2">
+    <div>
+      <ul>
+        <li> Location: New York </li>
+        <label for="borough"> Borough:</label>
+        <select name="placesinyc" id="placesinny">
+  <option value="brooklyn"> Brooklyn </option>
+  <option value="bronx"> Bronx </option>
+ <option value="manhatten"> Manhatten </option>
+  <option value="statenisland"> Staten Island </option>
+  <option value="queens"> Queens </option>
+</select>
+      </ul>
+    </div>
+
+   <div class="wrap">
+    <div class="search">
+      <input type="text" class="searchTerm" id="searchInput" placeholder="What are you searching for today?">
+      <button type="button" class="searchButton" onclick="search()">Explore</button>
+    </div>
+  </div>
+
+  <div id="searchResult"></div>
+
+   <script>
+    function search() {
+      var input = document.getElementById("searchInput");
+      var searchResult = document.getElementById("searchResult");
+
+      //Henter brukerens søkte ord fra søkemotoren
+      var searchedWord = input.value;
+
+      // Viser til brukeren det søkte ordet i søkemotoren 
+      searchResult.innerText = "You searched for: " + searchedWord;
+
+      // Klarerer søkemotoren tom når f.eks bruker trykker på knappen en gang uten å ha skrevet noe 
+      //eller trykker på knappen en gang til etter å ha skrevet inn og søkt
+      input.value = "";
+    }
+  </script>
+
+   <div class="ac">
+    Advertisment Categories    
+   </div>
+
+   <div class="acrow1">
+    <a href = "https://newyork.craigslist.org/search/jjj#search=1~thumb~0~0"> <img src="Downloads/suitcase.png" alt="" width= "110"> </a>
+    <a href = "https://newyork.craigslist.org/search/hhh#search=1~gallery~0~0"><img src="Downloads/house (1).png" alt="" width= "110">  </a>
+  </div>
+
+  <div class = "acrow2"> 
+    <a href = "https://newyork.craigslist.org/search/sss#search=1~gallery~0~0"><img src="Downloads/buy.png" alt="" width= "110">  </a>
+    <a href = "https://forums.craigslist.org/?areaID=3"><img src="Downloads/group.png" alt="" width = "110">
+   </div>
+   
+
+  <div class="services">
+    Services 
+  </div>
+
+  <div class="servicesrow1">
+    <a href = "https://newyork.craigslist.org/search/ccc"> <img src="Downloads/diversity.png" alt="" width= "110"></a>  
+    <a href = "https://newyork.craigslist.org/search/bbb#search=1~list~0~0"><img src="Downloads/customer-service.png" alt="" width = "110"> </a>
+  </div>
+
+  <div class = "servicesrow2">
+    <a href = "https://newyork.craigslist.org/search/ggg#search=1~thumb~0~0"><img src="Downloads/billboard (1).png" alt="" width = "110">  </a>
+    <a href = "https://newyork.craigslist.org/search/rrr#search=1~thumb~0~0"><img src="Downloads/resume.png" alt="" width = "110"> </a>
+   </div>
+
+   <div class = "footer"> 
+   <footer> 
+    <ul> 
+      <li> About us </li>
+    <li> Career </li>
+    <a href ="FAQ.html"> FAQ </li> </a>
+    <li> Terms of Use </li>
+    <li> Contact </li>
+  </ul>
+</footer>
+</div>
+   </body>
+    </html>
