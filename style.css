@@ -1,0 +1,142 @@
+*{transition:all 0.3s ease-in-out;}
+
+.container{
+  clear:both;
+  overflow:auto;
+  background-color: plum;
+  color: white;
+}
+
+nav{float:right;}
+
+.logo img{float:left;}
+
+.container2 {
+  float: auto;
+  background-color: plum;
+  color: white ;
+}
+
+ul li{
+  display: inline-block; padding:10px;
+  font-size:20px; font-family: 'Times New Roman', Times, serif;
+}
+
+ul li:hover{
+  color:blue;
+}
+
+body{
+  background: whitesmoke;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid plum;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchButton {
+  width: 80px;
+  height: 36px;
+  border: 1px solid black;
+  background: plum;
+  text-align: center;
+
+  color: black;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 30%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+
+.searchResult {
+  margin-top: 10px;
+}
+
+
+.ac{
+  color: blue; 
+  width: 30%;
+  position: absolute;
+  top: 46%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+}
+
+.acrow1{
+  color: black; 
+  position: absolute;
+  top: 56%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+}
+
+.acrow2{
+  color: black; 
+  position: absolute;
+  top: 72%;
+  left: 13%;
+  transform: translate(-50%, -50%);
+}
+
+.services {
+  color: blue; 
+  width: 30%;
+  position: absolute;
+  top: 46%;
+  left: 83%;
+  transform: translate(-50%, -50%);
+}
+
+.servicesrow1 {
+  color: black; 
+  width: 30%;
+  position: absolute;
+  top: 56%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+}
+
+.servicesrow2 {
+  color: black; 
+  width: 30%;
+  position: absolute;
+  top: 72%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: plum;
+  color: white;
+  text-align: center;
+}
